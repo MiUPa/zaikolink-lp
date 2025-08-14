@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8">
+<title>BASE OAuth Callback</title>
+<h1>BASE OAuth Callback</h1>
+<p>認可コード: <code id="code"></code></p>
+<script>
+  const p = new URLSearchParams(location.search);
+  document.getElementById('code').textContent = p.get('code') || '(code not found)';
+</script>
